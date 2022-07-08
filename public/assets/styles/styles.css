@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+:root
+{
+    --padding-container: 100px 0;
+}
+h1, h2, h3
+{
+    font-family: 'Outfit', sans-serif;
+}
+p
+{
+    font-family: 'Hepta Slab', serif;
+}
+.container
+{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background-color: #f0f1f4;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+}
+.hero::before
+{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url("../images/running.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    background-size: cover;
+    z-index: -1;
+}
+.nav
+{
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__title
+{
+    font-weight: 300;
+}
+.nav__link
+{
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+.nav__items
+{
+    list-style: none;
+}
+.nav__links
+{
+    color:  #121114;
+    text-decoration: none;
+}
+.nav__menu
+{
+    margin-left: auto;
+    cursor: pointer;
+    filter: invert(100%) sepia(100%)
+    saturate(0%) hue-rotate(27deg)
+    brightness(103%) contrast(102%);
+}
+.nav__svg
+{
+    display: block;
+    width: 30px;
+}
+.hero__container
+{
+    max-width: 800px;
+    display: grid;
+    --padding-container: 0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.hero__title
+{
+    font-size: 3rem;
+    color: #4e2b23;
+}
+.hero__paragraph
+{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #121114;
+}
+.cta
+{
+    display: inline-block;
+    background-color: #4e2b23;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.objetivo, .servicios, .afiliate, .marcas, .planes
+{
+    text-align: center;
+    background-color: #f0f1f4;
+}
+.subtitle
+{
+    color: #702619;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.objetivo__paragraph, .servicios__paragraph, .afiliate__paragraph, .marcas__paragraph
+{
+    line-height: 1.7;
+    color: #121114;
+}
+.afiliate__paragraph
+{
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+}
+.objetivo__icons, .servicios__icons, .marcas__icons
+{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.marcas__img
+{
+    width: 10rem;
+}
+.objetivo__main, .servicios__main, .marcas__main, .planes__main
+{
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+.servicios__main
+{
+    display: grid;
+    gap: 2em;
+}
+.objetivo__title, .servicios__title, .planes__title
+{
+    color: #cfc2a0;
+}
+a
+{
+    text-decoration: none;
+}
+.footer
+{
+    background-color: #3d3d3d;
+}
+.footer__title
+{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.footer__title, .footer__contact
+{
+    color: #FFF
+}
+.footer__container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 60px;
+}
+.nav--footer
+{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+.nav__link--footer
+{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+.footer__inputs
+{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+.footer__input
+{
+    background-color: #FFF;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+.footer__submit
+{
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    font-size: 1rem;
+    color: #000;
+    border-radius: 6px;
+}
+.footer__copy
+{
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #FFF;
+}
+.footer__copyright
+{
+    font-weight: 300;
+}
+.footer__icons
+{
+    margin-bottom: 10px;
+    text-decoration: none;
+    filter: invert(62%) sepia(80%)
+    saturate(1%) hue-rotate(346deg)
+    brightness(102%) contrast(88%);
+}
+.footer__img
+{
+    width: 20px;
+}
+.link__footer
+{
+    color: #fff;
+}
+.planes__card
+
