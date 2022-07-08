@@ -10,3 +10,8 @@ Heurísticas – IA Foundation:
 • Controllable: La información que un usuario podría querer se encuentran disponibles
 • Learnable: Puede usarse y entenderse con facilidad
 • Delightful: Cumple con las expectativas de los usuarios.
+Relacion entre el sistema y el mundo real
+• Consistencia y estandares
+• Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de los errores
+• Diseño estetico y minimalista
+• Diseño estetico y minimalista
